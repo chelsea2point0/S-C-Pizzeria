@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Spaghetti & Cruft Geek Pizzeria - Reservations</title>
+<meta charset="utf-8">  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">   
+<meta name="author" content="Chelsea Schaefer">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+	<div class="container">
+		<header>
+			<a href="index.html"><img id="logo" src="images/logo.gif" alt="spaghetti & cruft geek pizzeria logo"></a>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="menu.html">Menu</a></li>
+					<li><a href="order.html">Order Online</a></li>
+					<li><a href="reservations.html" class="currentPage">Reservations</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="testimonials.html">Testimonials</a></li>
+					<li><a href="events.html">Events</a></li>
+					<li><a href="about.html">Our Story</a></li>
+				</ul>
+			</nav>
+			<div class="banner">
+				<h4>Pizza, pasta, and WiFi.<br>	Enjoy a bite with your bytes.</h4>
+			</div>
+		</header>
+		<section>
+			<div class="main">
+				<h2>Make a Reservation</h2>
+				<p class="reservations">Prefer not to wait for a table? We accept dinner reservations so that your party can be seated as soon as you arrive. <br>Please call for groups of 12+ to inquire about our private function room.</p>
+				<form action="scripts/echo.asp" method="POST">
+				<table>
+					<tr>
+						<td class="label">Last Name:</td>
+						<td><input type="text" name="name"></td>
+					</tr>
+					<tr>
+						<td class="label">Party Size:</td>
+						<td><input type="number" name="party" min="0" max="11"></td>
+					</tr>
+					<tr>
+						<td class="label">Phone:</td>
+						<td><input type="text" name="phone" placeholder="555-555-5555"></td>
+					</tr>
+					<tr>
+						<td class="label">Date:</td>
+						<td><input type="date" name="date"></td>
+					</tr>
+					<tr>
+						<td class="label">Time:</td>
+						<td>
+							<select name="time">
+								<option value="4:00">4:00</option>
+								<option value="4:30">4:30</option>
+								<option value="5:00">5:00</option>
+								<option value="5:30">5:30</option>
+								<option value="6:00">6:00</option>
+								<option value="6:30">6:30</option>
+								<option value="7:00">7:00</option>
+								<option value="7:30">7:30</option>
+								<option value="8:00">8:00</option>
+								<option value="8:30">8:30</option>
+								<option value="9:00">9:00</option>
+								<option value="9:30">9:30</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td class="label"><input type="reset" value="Reset"></td>
+						<td><input type="submit" value="Reserve Now"></td>
+					</tr>
+				</table>
+				</form>
+			</div>
+		</section>
+		<footer>
+			<p><span class="companyName">Spaghetti & Cruft Geek Pizzeria</span><br>
+			742 Cederholm Ave.<br>
+			Gotham, CA 00234</p>
+		</footer>
+	</div>
+</body>
+
+</html>

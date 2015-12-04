@@ -1,0 +1,61 @@
+html {
+	background-image: none;
+	font-family: "Times New Roman", Times, serif;
+}
+
+.container {
+	background-color: white;
+	color: #000;
+	margin: 0;
+	width: 100%;
+}
+
+#logo {
+	float: left;
+	display: block;
+	width: 25%;
+}
+
+nav  ul {
+	display: none;
+}
+
+.banner h4 {
+	text-align: right;
+}
+
+.main {
+	margin: 0;
+	padding: 0;
+}
+
+.main h2 {
+	text-align: center;
+	padding: 10px;
+	clear: left;
+}
+
+footer {
+	display:none;
+}
+
+.companyName{
+	color: #000;
+}
+
+/*menu page */
+.menu {
+	width: 600px;
+}
+
+.menuGroup {
+	color: #000;
+}
+/*events page */
+.liveShow {
+	margin: 10px 100px;
+}
+
+td img {
+	display: none;
+}

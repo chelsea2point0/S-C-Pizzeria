@@ -1,0 +1,251 @@
+html {
+	background-image: url('../images/brick.jpg');
+
+}
+h1, h2, h3, h4 {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+p, a {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+.container {
+	background-color: antiqueWhite;
+	color: #00004d;
+	opacity: 0.9;
+	max-width: 1400px;
+	margin: auto;
+}
+
+#logo {
+	float: left;
+	display: block;
+	width: 25%;
+}
+
+nav  ul {
+	list-style-type: none;
+	text-align: right;
+	padding: 30px 20px 10px;
+	
+}
+
+nav ul li {
+	display: inline;
+	padding-left: 15px;
+}
+
+nav li a {
+	text-decoration: none;
+	color: #191970;
+}
+
+nav li a:hover {
+	text-decoration: underline;
+}
+
+.currentPage  {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.cover {
+	height: 600px;
+	background-image: url("../images/cover.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.cover h1 {
+	color: antiqueWhite;
+	padding: 15% 0 0 2%;
+	font-size: 1.5em;
+}
+
+.cover h2 {
+	color: antiqueWhite;
+	padding-left: 2%;
+}
+
+.banner {
+	height: 75px;
+	background-image: url("../images/banner.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;	
+}
+
+.banner h4 {
+	color: antiqueWhite;
+	padding-top: 20px;
+	font-style: italic;
+}
+
+#news {
+	margin: 80px 50px 80px 50px;
+}
+
+#news h2 {
+	color: red;
+}
+
+#news p {
+	margin-left: 50px;
+}
+
+.main {
+	margin: 0 30px;
+	padding: 30px 50px 30px 50px;
+}
+
+.main h2 {
+	text-align: center;
+	padding: 20px;
+	clear: left;
+}
+
+footer {
+	background-color: #202f44;
+	height: 100px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+footer p {
+	color: antiqueWhite;
+	text-align: center;
+	margin: auto;
+	padding-top: 25px;
+}
+
+.companyName{
+	color: red;
+	font-weight: bold;
+	
+}
+
+/*about page */
+
+#staffPhoto {
+	float: left;
+	margin: 5px 20px 20px 5px;
+}
+
+/*menu page */
+.menu {
+	width: 700px;
+}
+
+.menuGroup {
+	text-align: center;
+	color: red;
+}
+
+.vegetarian {
+	text-align: center;
+}
+
+ /*order page */
+table {
+	margin:auto;
+}
+
+td {
+	vertical-align: top;
+}
+
+th {
+	text-align: left;
+}
+
+fieldset {
+	width: 40%;
+	margin: auto;
+}
+
+/*events page */
+.liveShow {
+	margin: 10px 100px;
+}
+
+td img {
+	margin: 20px;
+}
+
+.musicHeader, .reservations {
+	text-align: center;
+}
+
+/*reservations page*/
+.label {
+	text-align: right;
+	padding-right: 10px;
+}
+
+/*media queries for responsive design*/
+
+@media screen and (max-width: 960px) {
+	#logo {
+		width: 15%;	
+	}
+	nav li a {
+		font-size: .7em;
+	}
+	
+	.cover {
+		height: 100%;
+	}
+	.cover h1 {
+		font-size: 1em;
+	}
+
+	.cover h2 {
+		font-size: 1em;
+	}
+	.menu {
+		width: 500px;
+	}
+	td img {
+		margin: 5px;
+		width: 95%;
+	}
+}
+@media screen and (max-width: 600px) {
+	.banner h4 {
+		padding-top: 0;
+		font-size: .8em;
+	}
+	.main {
+		margin: 0 10px;
+		padding: 10px;
+	}
+	.menu {
+		width: 300px;
+	}
+	#staffPhoto {
+		width: 100%;
+	}
+	
+}
+@media screen and (max-width: 440px) {
+	#logo {
+		width: 80px;	
+	}
+	.cover h1 {
+		font-size: .7em;
+	}
+
+	.cover h2 {
+		font-size: .7em;
+	}
+	#news p {
+		margin-left: 0;
+	}
+	.main {
+		padding: 5px;
+		font-size: 0.7em;
+	}
+}
+
+
+	
