@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Spaghetti & Cruft Geek Pizzeria - Contact Us</title>
+<title>Spaghetti & Cruft Geek Pizzeria | Contact Us</title>
 <meta charset="utf-8">     
 <meta name="author" content="Chelsea Schaefer">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,7 +38,7 @@
 							<p>Spaghetti & Cruft Geek Pizzeria<br>
 							742 Cederholm Ave.<br>
 							Gotham, CA 00234</p>
-							<img src="images/map.JPG" alt="map of Spaghetti & Cruft location">
+							<img id="map" src="images/map.JPG" alt="map of Spaghetti & Cruft location">
 							<a href="https://www.google.com/maps/place/742+W+Cederholm+St,+Rochelle,+IL+61068/@41.9293046,-88.9778158,15z/data=!4m2!3m1!1s0x8808d86889301dcd:0x4c0a7961b9d28cdd" target="_blank"><p>Get Directions</p></a>
 						</td>
 
@@ -47,17 +47,30 @@
 							<p><a href="tel:5105550987">510-555-0987</a></p>
 							<br>
 							<h3>Send Us an E-Mail:</h3>
-							<p><a href="mailto:S&amp;C@gmail.com" target="_blank">S&amp;C@gmail.com</a></p>
+							<p><a href="mailto:S&amp;C@gmail.com" target="_blank" class="normalLink">S&amp;C@gmail.com</a></p>
+							<br>
+							<h3>Leave a Comment:</h3>
+							<form action="scripts/echo.asp" method="POST">
+							<label for="commentCardName">Your Name:</label><br>
+							<input type="text" id="commentCardName" required><br>
+							<label for="Cphone1">Phone Number:</label><br>
+							(<input type="text" name="phone" id="Cphone1" size=3 maxlength=3 required>)
+							<input type="text" name="phone" id="Cphone2" size=3 maxlength=3 required> -
+							<input type="text" name="phone" id="Cphone3" size=4 maxlength=4 required><br>
+							<label for="commentCardMessage">Comments:</label><br>
+							<textarea id="commentCardMessage" cols="25" rows="4" required></textarea> <br>
+							<input type="submit" name="submitComment" value="Send">
+							<input type="reset" name="reset" value="Clear">
+							</form>
 							<br>
 							<h3>Connect with Us:</h3>
-								<a href="http://www.facebook.com"><img src="images/facebook.png" alt="facebook icon" width="50px"></a>
-								<a href="http://www.twitter.com"><img src="images/twitter.png" alt="twitter icon" width="50px"></a>
-								<a href="http://www.pinterest.com"><img src="images/pinterest.png" alt="pinterest icon" width="50px"></a>
-								<a href="http://www.instagram.com"><img src="images/instagram.png" alt="instagram icon" width="50px"></a>
+								<a href="http://www.facebook.com" target="_blank"><img class="socialMedia" src="images/facebook.png" alt="facebook icon" width="40"></a>
+								<a href="http://www.twitter.com" target="_blank"><img class="socialMedia" src="images/twitter.png" alt="twitter icon" width="40"></a>
+								<a href="http://www.pinterest.com" target="_blank"><img class="socialMedia" src="images/pinterest.png" alt="pinterest icon" width="40"></a>
+								<a href="http://www.instagram.com" target="_blank"><img class="socialMedia" src="images/instagram.png" alt="instagram icon" width="40"></a>
 						</td>
 					</tr>
 				</table>
-				</div>
 			</div>
 		</section>
 		<footer>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Spaghetti & Cruft Geek Pizzeria - Reservations</title>
+<title>Spaghetti & Cruft Geek Pizzeria | Reservations</title>
 <meta charset="utf-8">  
 <meta name="viewport" content="width=device-width, initial-scale=1.0">   
 <meta name="author" content="Chelsea Schaefer">
@@ -31,7 +31,7 @@
 		<section>
 			<div class="main">
 				<h2>Make a Reservation</h2>
-				<p class="reservations">Prefer not to wait for a table? We accept dinner reservations so that your party can be seated as soon as you arrive. <br>Please call for groups of 12+ to inquire about our private function room.</p>
+				<p class="center">Prefer not to wait for a table? We accept dinner reservations so that your party can be seated as soon as you arrive. <br>The staff requests that all parties of 10+ make a reservation to allow us time to prepare for your party's arrival. <br>Groups of 20+, please call the restaurant to inquire about our private function room.</p>
 				<form action="scripts/echo.asp" method="POST">
 				<table>
 					<tr>
@@ -44,7 +44,9 @@
 					</tr>
 					<tr>
 						<td class="label">Phone:</td>
-						<td><input type="text" name="phone" placeholder="555-555-5555"></td>
+						<td>(<input type="text" name="phone" id="Cphone1" size=3 maxlength=3 required>)
+							<input type="text" name="phone" id="Cphone2" size=3 maxlength=3 required> -
+							<input type="text" name="phone" id="Cphone3" size=4 maxlength=4 required><br></td>
 					</tr>
 					<tr>
 						<td class="label">Date:</td>
@@ -76,6 +78,10 @@
 				</table>
 				</form>
 			</div>
+		</section>
+		<section>
+			<h4 class="centerImg">Our Dining Room</h4>
+			<p><img class="centerImg" src="images/s&amp;cInterior.jpg" alt="Spaghetti & Cruft interior with brick wall"></p>
 		</section>
 		<footer>
 			<p><span class="companyName">Spaghetti & Cruft Geek Pizzeria</span><br>

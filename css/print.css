@@ -13,7 +13,7 @@ html {
 #logo {
 	float: left;
 	display: block;
-	width: 25%;
+	width: 10%;
 }
 
 nav  ul {
@@ -50,6 +50,10 @@ footer {
 
 .menuGroup {
 	color: #000;
+}
+
+#menuImg {
+	display: none;
 }
 /*events page */
 .liveShow {
